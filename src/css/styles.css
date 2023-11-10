@@ -47,13 +47,13 @@ header #logo {
 }
 
 header #title {
-    font-size: clamp(8px, 10vw, 50px);
+    font-size: clamp(20px, 3vw, 50px);
     font-weight: 700;
     color: var(--dark-font);
 }
 
 header #user-greet {
-    font-size: clamp(8px, 5vw, 25px);
+    font-size: clamp(15px, 1.5vw, 40px);
     color: var(--dark-font);
     font-weight: 500;
 }
@@ -79,7 +79,8 @@ nav #main-projects {
 }
 
 nav #main-projects h1 {
-    font-size: 2vw;
+    /* font-size: 2vw; */
+    font-size: clamp(12px, 2vw, 50px);
     font-weight: 700;
 }
 
@@ -96,7 +97,7 @@ nav #main-projects h1 {
 #main-projects li:hover:not(:last-child),
 nav #projects li:hover {
     background-color: var(--second);
-    cursor: default;
+    cursor: pointer;
     scale: 1.05;
     transition: all 0.5s;
 }
@@ -117,7 +118,8 @@ nav #projects li {
 }
 
 nav #projects h2 {
-    font-size: 1.5vw;
+    /* font-size: 1.5vw; */
+    font-size: clamp(10px, 1.5vw, 40px);
     font-weight: 600;
 }
 
@@ -129,10 +131,15 @@ nav li img {
     font-size: 2vw;
 }
 
-button {
+#add-project {
     align-self: flex-start;
     margin-top: 15%;
     margin-left: 2vw;
+    box-shadow: 17px 17px 34px #bebebe;
+    border-radius: 50%;
+}
+
+button {
     font-size: 4vw;
     font-weight: 600;
     height: 4vw;
@@ -144,7 +151,12 @@ button {
     align-items: center;
     color: var(--dark-font);
     background-color: var(--main);
-    box-shadow: 17px 17px 34px #bebebe;
+}
+
+button:hover {
+    scale: 1.1;
+    transform: rotate(90deg);
+    transition: all 0.5s;
 }
 
 main {
