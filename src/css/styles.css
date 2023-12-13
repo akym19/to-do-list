@@ -26,7 +26,7 @@ body {
     grid-template-rows: max-content auto 30px;
     grid-template-areas:
         "header header"
-        "side-nav display-content"
+        "side-nav main"
         "footer footer";
 }
 
@@ -160,7 +160,7 @@ button:hover {
 }
 
 main {
-    grid-area: display-content;
+    grid-area: main;
     background-color: var(--main);
 }
 
