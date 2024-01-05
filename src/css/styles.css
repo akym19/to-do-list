@@ -7,6 +7,9 @@
     --second: #ffcf96;
     --third: #f6fdc3;
     --fourth: #cdfad5;
+    --prio-low: green;
+    --prio-med: orange;
+    --prio-high: red;
 }
 
 * {
@@ -174,10 +177,39 @@ footer {
     font-size: clamp(10px, 2vw, 1em);
 }
 
+#todo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .todo {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: var(--second);
+    height: 3em;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.todo:hover {
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+    cursor: default;
+}
+
+.todo.prio-low {
+    border-left: solid 5px var(--prio-low);
+}
+
+.todo.prio-med {
+    border-left: solid 5px var(--prio-med);
+}
+
+.todo.prio-high {
+    border-left: solid 5px var(--prio-high);
 }
 
 .todo-details {
@@ -191,7 +223,7 @@ footer {
 }
 
 .todo-details:hover {
-    background-color: var(--fourth);
+    background-color: var(--main);
     transition: all 0.2s;
     cursor: pointer;
     font-weight: 700;
