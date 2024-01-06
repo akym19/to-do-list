@@ -1,95 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Do Better</title>
-        <script defer type="module" src="main.js"></script>
-        <link rel="stylesheet" href="src/css/styles.css" />
-    </head>
-    <body>
-        <header>
-            <img id="logo" src="dist/images/to-do-logo-black.png" alt="Logo" />
-            <h1 id="title">Do Better</h1>
-            <p id="user-greet">Hello, user</p>
-        </header>
-        <nav id="side-nav">
-            <ul id="main-projects">
-                <li id="nav-home">
-                    <img src="dist/images/home.png" alt="Home" />
-                    <h1>Home</h1>
-                </li>
-                <li id="nav-today">
-                    <img src="dist/images/today.png" alt="Today" />
-                    <h1>Today</h1>
-                </li>
-                <li id="nav-week">
-                    <img src="dist/images/week.png" alt="Week" />
-                    <h1>Week</h1>
-                </li>
-                <li id="nav-projects">
-                    <img src="dist/images/project.png" alt="Projects" />
-                    <h1>Projects</h1>
-                </li>
-            </ul>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Do Better</title>
+		<script defer type="module" src="main.js"></script>
+		<link rel="stylesheet" href="src/css/styles.css" />
+	</head>
+	<body>
+		<header>
+			<img id="logo" src="dist/images/to-do-logo-black.png" alt="Logo" />
+			<h1 id="title">Do Better</h1>
+			<p id="user-greet">Hello, user</p>
+		</header>
+		<nav id="side-nav">
+			<ul id="main-projects">
+				<li id="nav-home">
+					<img src="dist/images/home.png" alt="Home" />
+					<h1>Home</h1>
+				</li>
+				<li id="nav-today">
+					<img src="dist/images/today.png" alt="Today" />
+					<h1>Today</h1>
+				</li>
+				<li id="nav-week">
+					<img src="dist/images/week.png" alt="Week" />
+					<h1>Week</h1>
+				</li>
+				<li id="nav-projects">
+					<img src="dist/images/projects.png" alt="Projects" />
+					<h1>Projects</h1>
+				</li>
+			</ul>
 
-            <ul id="projects">
-                <li class="nav-projects-entry"><h2>Work</h2></li>
-                <li class="nav-projects-entry"><h2>School</h2></li>
-                <li class="nav-projects-entry"><h2>Personal</h2></li>
-            </ul>
+			<ul id="projects">
+				<li class="nav-projects-entry"><h2>Work</h2></li>
+				<li class="nav-projects-entry"><h2>School</h2></li>
+				<li class="nav-projects-entry"><h2>Personal</h2></li>
+			</ul>
 
-            <div id="add-project">
-                <button type="button">+</button>
-            </div>
-        </nav>
-        <main>
-            <div id="todo-container">
-                <div class="todo prio-low">
-                    <div class="todo-checkbox">
-                        <input type="checkbox" name="" id="">
-                    </div>
-                    <div class="todo-title">Create Todo</div>
-                    <button type="button" class="todo-details">details</button>
-                    <div class="todo-duedate">Jan-30</div>
-                    <div class="todo-edit">add edit button</div>
-                    <div class="todo-delete">add delete button icon</div>
-                </div>
+			<div id="add-project">
+				<button type="button">+</button>
+			</div>
+		</nav>
+		<main>
+			<div id="todo-container">
+				<div class="todo prio-low">
+					<div class="todo-checkbox">
+						<input type="checkbox" name="" id="" />
+					</div>
+					<div class="todo-title">Create Todo</div>
+					<button type="button" class="todo-details">details</button>
+					<div class="todo-duedate">Jan-30</div>
+					<div class="todo-edit">
+						<img src="dist/images/edit.png" alt="Edit Task" />
+					</div>
+					<div class="todo-delete">
+						<img src="dist/images/bin.png" alt="Delete Task" />
+					</div>
+				</div>
 
-                <div class="todo prio-med">
-                    <div class="todo-checkbox">
-                        <input type="checkbox" name="" id="">
-                    </div>
-                    <div class="todo-title">Create Todo</div>
-                    <button type="button" class="todo-details">details</button>
-                    <div class="todo-duedate">Jan-30</div>
-                    <div class="todo-edit">add edit button</div>
-                    <div class="todo-delete">add delete button icon</div>
-                </div>
+				<div class="todo prio-med">
+					<div class="todo-checkbox">
+						<input type="checkbox" name="" id="" />
+					</div>
+					<div class="todo-title">Create Todo</div>
+					<button type="button" class="todo-details">details</button>
+					<div class="todo-duedate">Jan-30</div>
+					<div class="todo-edit">
+						<img src="dist/images/edit.png" alt="Edit Task" />
+					</div>
+					<div class="todo-delete">
+						<img src="dist/images/bin.png" alt="Delete Task" />
+					</div>
+				</div>
 
-                <div class="todo prio-high">
-                    <div class="todo-checkbox">
-                        <input type="checkbox" name="" id="">
-                    </div>
-                    <div class="todo-title">Create Todo</div>
-                    <button type="button" class="todo-details">details</button>
-                    <div class="todo-duedate">Jan-30</div>
-                    <div class="todo-edit">add edit button</div>
-                    <div class="todo-delete">add delete button icon</div>
-                </div>
+				<div class="todo prio-high">
+					<div class="todo-checkbox">
+						<input type="checkbox" name="" id="" />
+					</div>
+					<div class="todo-title">Create Todo</div>
+					<button type="button" class="todo-details">details</button>
+					<div class="todo-duedate">Jan-30</div>
+					<div class="todo-edit">
+						<img src="dist/images/edit.png" alt="Edit Task" />
+					</div>
+					<div class="todo-delete">
+						<img src="dist/images/bin.png" alt="Delete Task" />
+					</div>
+				</div>
 
-                <div class="todo prio-high">
-                    <div class="todo-checkbox">
-                        <input type="checkbox" name="" id="">
-                    </div>
-                    <div class="todo-title">Create Todo</div>
-                    <button type="button" class="todo-details">details</button>
-                    <div class="todo-duedate">Jan-30</div>
-                    <div class="todo-edit">add edit button</div>
-                    <div class="todo-delete">add delete button icon</div>
-                </div>
-            </div>
-        </main>
-        <footer>A To-Do List App Project for The Odin Project</footer>
-    </body>
+				<div class="todo prio-high">
+					<div class="todo-checkbox">
+						<input type="checkbox" name="" id="" />
+					</div>
+					<div class="todo-title">Create Todo</div>
+					<button type="button" class="todo-details">details</button>
+					<div class="todo-duedate">Jan-30</div>
+					<div class="todo-edit">
+						<img src="dist/images/edit.png" alt="Edit Task" />
+					</div>
+					<div class="todo-delete">
+						<img src="dist/images/bin.png" alt="Delete Task" />
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>A To-Do List App Project for The Odin Project</footer>
+	</body>
 </html>
