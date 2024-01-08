@@ -23,13 +23,23 @@ const sideNavContents = [
 	},
 ];
 
-// continue this
-const generateNav = (navArray) => {
-	const navTabs = [];
+const generateNav = (navItem) => {
+	const nav = createElem("li", {
+		id: navItem.id,
+	});
 
-	for (const nav of navArray) {
-		const navTabElem = createElem("li");
-	}
+	const navIcon = createElem("img", {
+		src: navItem.img,
+		alt: navItem.item,
+	});
+
+	const navH1 = createElem("h1", {});
+	navH1.textContent = navItem.item;
+
+	nav.appendChild(navIcon);
+	nav.appendChild(navH1);
+
+	return nav;
 };
 
 const homepage = () => {
@@ -57,6 +67,8 @@ const homepage = () => {
 	header.appendChild(doBetter);
 	header.appendChild(greetUser);
 
+	body.appendChild(header);
+
 	const sideNav = createElem("nav", {
 		id: "side-nav",
 	});
@@ -64,6 +76,14 @@ const homepage = () => {
 	const mainProj = createElem("ul", {
 		id: "main-projects",
 	});
+
+	sideNavContents.forEach((navItem) => {
+		const li = generateNav(navItem);
+		mainProj.appendChild(li);
+	});
+
+	sideNav.appendChild(mainProj);
+	body.appendChild(sideNav);
 };
 
 export const generateHomepage = () => {
