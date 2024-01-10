@@ -333,7 +333,7 @@ input[type="checkbox"]:checked::before {
 	background-color: white;
 
 	display: grid;
-	grid-template-columns: 1fr 5fr;
+	grid-template-columns: 1fr 4fr;
 	grid-template-rows: 1fr 7fr;
 	grid-template-areas:
 		"modalHeader modalHeader"
@@ -359,9 +359,9 @@ input[type="checkbox"]:checked::before {
 
 #modalSideNav ul {
 	margin-top: 10px;
-	margin-left: 10px;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	gap: 10px;
 }
 
@@ -369,14 +369,29 @@ input[type="checkbox"]:checked::before {
 	list-style-type: none;
 }
 
+#modalSideNav button {
+	background-color: transparent;
+	border: 0;
+}
+
+#modalSideNav button:hover {
+	scale: 1.1;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
 #modalForm {
 	grid-area: modalForm;
 	background-color: var(--main);
 }
 
-#modalForm form {
+#modalForm #formContainer {
 	margin-top: 10px;
 	margin-left: 10px;
+}
+
+#modalForm #newTask {
+	display: none;
 }
 
 /* * {

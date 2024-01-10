@@ -107,15 +107,22 @@
 			</div>
 		</main>
 		<div id="addTaskModal">
-			<div id="modalHeader"><h1>Create a new...</h1></div>
+			<div id="modalHeader"><h1>Create</h1></div>
 			<div id="modalSideNav">
 				<ul>
-					<li><h2>Project</h2></li>
-					<li><h2>To-do</h2></li>
+					<li>
+						<button><h2>New Project</h2></button>
+					</li>
+					<li>
+						<button><h2>New Task</h2></button>
+					</li>
 				</ul>
 			</div>
 			<div id="modalForm">
-				<form action="" id="addTask">add form fields here</form>
+				<div id="formContainer">
+					<form action="" id="newProject">project form</form>
+					<form action="" id="newTask">task form</form>
+				</div>
 			</div>
 		</div>
 		<footer>A To-Do List App Project for The Odin Project</footer>
