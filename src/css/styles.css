@@ -349,7 +349,22 @@ input[type="checkbox"]:checked::before {
 	background-color: var(--second);
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-end;
+	position: relative;
+}
+
+#modalHeader h1 {
+	margin-right: 40%;
+}
+
+#modalHeader img {
+	position: absolute;
+	height: 25px;
+	right: 1%;
+}
+
+#modalHeader img:hover {
+	cursor: pointer;
 }
 
 #modalSideNav {
@@ -383,16 +398,54 @@ input[type="checkbox"]:checked::before {
 #modalForm {
 	grid-area: modalForm;
 	background-color: var(--main);
+	height: 100%;
 }
 
 #modalForm #formContainer {
 	margin-top: 10px;
 	margin-left: 10px;
+	height: 100%;
 }
 
+#formContainer form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+form textarea {
+	background-color: transparent;
+	border: none;
+	font-size: 1.6rem;
+	resize: none;
+}
+
+form textarea:focus {
+	outline: none;
+}
+
+form button {
+	margin-bottom: 3%;
+	font-size: 1.1rem;
+	width: max-content;
+	padding: 0.1rem 0.3rem;
+	background-color: var(--third);
+	border: none;
+	border-radius: 0.3rem;
+}
+
+form button:hover {
+	background-color: var(--fourth);
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+/* ----------HIDDEN NEW TASK FORM---------- */
 #modalForm #newTask {
 	display: none;
 }
+/* ----------HIDDEN NEW TASK FORM---------- */
 
 /* * {
 	outline: solid 1px black;

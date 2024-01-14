@@ -107,7 +107,10 @@
 			</div>
 		</main>
 		<div id="addTaskModal">
-			<div id="modalHeader"><h1>Create</h1></div>
+			<div id="modalHeader">
+				<h1>Create</h1>
+				<img src="dist/images/delete.png" alt="Close" />
+			</div>
 			<div id="modalSideNav">
 				<ul>
 					<li>
@@ -120,7 +123,16 @@
 			</div>
 			<div id="modalForm">
 				<div id="formContainer">
-					<form action="" id="newProject">project form</form>
+					<form action="" id="newProject">
+						<textarea
+							name="projectTitle"
+							id="projectTitle"
+							cols="30"
+							rows="1"
+							placeholder="New Project Title"
+						></textarea>
+						<button>Create New Project</button>
+					</form>
 					<form action="" id="newTask">task form</form>
 				</div>
 			</div>
