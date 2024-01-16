@@ -407,25 +407,33 @@ input[type="checkbox"]:checked::before {
 	height: 100%;
 }
 
-#formContainer form {
+#formContainer #newProject {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	height: 100%;
 }
 
-form textarea {
+form #projectTitle,
+form #taskTitle {
+	font-size: 1.6rem;
+}
+
+form #taskDetails {
+	font-size: 1.2rem;
+}
+
+form input[type="text"] {
 	background-color: transparent;
 	border: none;
-	font-size: 1.6rem;
 	resize: none;
 }
 
-form textarea:focus {
+form input[type="text"]:focus {
 	outline: none;
 }
 
-form button {
+form#newProject button {
 	margin-bottom: 3%;
 	font-size: 1.1rem;
 	width: max-content;
@@ -435,14 +443,14 @@ form button {
 	border-radius: 0.3rem;
 }
 
-form button:hover {
+form#newProject button:hover {
 	background-color: var(--fourth);
 	cursor: pointer;
 	transition: all 0.3s;
 }
 
 /* ----------HIDDEN NEW TASK FORM---------- */
-#modalForm #newTask {
+#modalForm #newProject {
 	display: none;
 }
 /* ----------HIDDEN NEW TASK FORM---------- */

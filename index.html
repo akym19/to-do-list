@@ -124,16 +124,58 @@
 			<div id="modalForm">
 				<div id="formContainer">
 					<form action="" id="newProject">
-						<textarea
+						<input
+							type="text"
 							name="projectTitle"
 							id="projectTitle"
-							cols="30"
-							rows="1"
 							placeholder="New Project Title"
-						></textarea>
+						/>
 						<button>Create New Project</button>
 					</form>
-					<form action="" id="newTask">task form</form>
+
+					<form action="" id="newTask">
+						<input
+							type="text"
+							name="taskTitle"
+							id="taskTitle"
+							placeholder="New Task Title"
+						/>
+						<input
+							type="text"
+							name="taskDetails"
+							id="taskDetails"
+							placeholder="New Task Details"
+						/>
+						<label for="taskDue">Due Date</label>
+						<input type="date" name="taskDue" id="taskDue" />
+
+						<div id="prioritySelect">
+							<div id="lowPrioSelect">
+								<label for="low">Low</label>
+								<input type="radio" id="low" name="taskPriority" value="low" />
+							</div>
+
+							<div id="medPrioSelect">
+								<label for="medium">Medium</label>
+								<input
+									type="radio"
+									id="medium"
+									name="taskPriority"
+									value="medium"
+								/>
+							</div>
+
+							<div id="highPrioSelect">
+								<label for="high">High</label>
+								<input
+									type="radio"
+									id="high"
+									name="taskPriority"
+									value="high"
+								/>
+							</div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
