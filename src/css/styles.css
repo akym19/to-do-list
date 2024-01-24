@@ -414,6 +414,28 @@ input[type="checkbox"]:checked::before {
 	height: 100%;
 }
 
+#formContainer #newTask {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+#formContainer #newTodoText {
+	display: flex;
+	flex-direction: column;
+}
+
+#formContainer #newToDoDate {
+	display: flex;
+}
+
+#prioritySelect {
+	display: flex;
+	align-items: center;
+	gap: 5%;
+}
+
 form #projectTitle,
 form #taskTitle {
 	font-size: 1.6rem;
@@ -433,7 +455,7 @@ form input[type="text"]:focus {
 	outline: none;
 }
 
-form#newProject button {
+#formContainer button {
 	margin-bottom: 3%;
 	font-size: 1.1rem;
 	width: max-content;
@@ -443,7 +465,7 @@ form#newProject button {
 	border-radius: 0.3rem;
 }
 
-form#newProject button:hover {
+#formContainer button:hover {
 	background-color: var(--fourth);
 	cursor: pointer;
 	transition: all 0.3s;

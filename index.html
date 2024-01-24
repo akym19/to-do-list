@@ -134,46 +134,60 @@
 					</form>
 
 					<form action="" id="newTask">
-						<input
-							type="text"
-							name="taskTitle"
-							id="taskTitle"
-							placeholder="New Task Title"
-						/>
-						<input
-							type="text"
-							name="taskDetails"
-							id="taskDetails"
-							placeholder="New Task Details"
-						/>
-						<label for="taskDue">Due Date</label>
-						<input type="date" name="taskDue" id="taskDue" />
+						<div id="newTodoText">
+							<input
+								type="text"
+								name="taskTitle"
+								id="taskTitle"
+								placeholder="New Task Title"
+							/>
+							<input
+								type="text"
+								name="taskDetails"
+								id="taskDetails"
+								placeholder="New Task Details"
+							/>
+						</div>
 
-						<div id="prioritySelect">
-							<div id="lowPrioSelect">
-								<label for="low">Low</label>
-								<input type="radio" id="low" name="taskPriority" value="low" />
+						<div id="newTodoBtns">
+							<div id="newToDoDate">
+								<label for="taskDue"><h2>Due Date:</h2></label>
+								<input type="date" name="taskDue" id="taskDue" />
 							</div>
 
-							<div id="medPrioSelect">
-								<label for="medium">Medium</label>
-								<input
-									type="radio"
-									id="medium"
-									name="taskPriority"
-									value="medium"
-								/>
-							</div>
+							<div id="prioritySelect">
+								<h2>Priority:</h2>
+								<div id="lowPrioSelect">
+									<label for="low">Low</label>
+									<input
+										type="radio"
+										id="low"
+										name="taskPriority"
+										value="low"
+									/>
+								</div>
 
-							<div id="highPrioSelect">
-								<label for="high">High</label>
-								<input
-									type="radio"
-									id="high"
-									name="taskPriority"
-									value="high"
-								/>
+								<div id="medPrioSelect">
+									<label for="medium">Medium</label>
+									<input
+										type="radio"
+										id="medium"
+										name="taskPriority"
+										value="medium"
+									/>
+								</div>
+
+								<div id="highPrioSelect">
+									<label for="high">High</label>
+									<input
+										type="radio"
+										id="high"
+										name="taskPriority"
+										value="high"
+									/>
+								</div>
 							</div>
+							<button>Create New Task</button>
 						</div>
 					</form>
 				</div>
