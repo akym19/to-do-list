@@ -426,16 +426,6 @@ input[type="checkbox"]:checked::before {
 	flex-direction: column;
 }
 
-#formContainer #newToDoDate {
-	display: flex;
-}
-
-#prioritySelect {
-	display: flex;
-	align-items: center;
-	gap: 5%;
-}
-
 form #projectTitle,
 form #taskTitle {
 	font-size: 1.6rem;
@@ -470,6 +460,68 @@ form input[type="text"]:focus {
 	cursor: pointer;
 	transition: all 0.3s;
 }
+
+#newTodoBtns {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+#newTodoBtns #newToDoDate {
+	display: flex;
+	gap: 1rem;
+}
+
+#prioritySelect {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+#prioritySelect h2 {
+	margin-right: 1.3rem;
+}
+
+/* ----------RADIO BUTTONS START---------- */
+
+input[type="radio"] {
+	display: none;
+}
+
+#prioritySelect label {
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 0.1rem 0.5rem;
+}
+
+input[type="radio"]:checked + label[for="low"],
+input[type="radio"] + label[for="low"]:hover {
+	background-color: var(--prio-low);
+	color: var(--white-font);
+	font-weight: 500;
+}
+
+input[type="radio"]:checked + label[for="medium"],
+input[type="radio"] + label[for="medium"]:hover {
+	background-color: var(--prio-med);
+	color: var(--white-font);
+	font-weight: 500;
+}
+
+input[type="radio"]:checked + label[for="high"],
+input[type="radio"] + label[for="high"]:hover {
+	background-color: var(--prio-high);
+	color: var(--white-font);
+	font-weight: 500;
+}
+
+input[type="radio"]:checked + label,
+input[type="radio"] + label {
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+/* ----------RADIO BUTTONS END---------- */
 
 /* ----------HIDDEN NEW TASK FORM---------- */
 #modalForm #newProject {
