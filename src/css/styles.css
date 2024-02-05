@@ -82,7 +82,6 @@ nav #main-projects {
 }
 
 nav #main-projects h1 {
-	/* font-size: 2vw; */
 	font-size: clamp(12px, 2vw, 50px);
 	font-weight: 700;
 }
@@ -125,7 +124,6 @@ nav #projects li {
 }
 
 nav #projects h2 {
-	/* font-size: 1.5vw; */
 	font-size: clamp(10px, 1.5vw, 40px);
 	font-weight: 600;
 }
@@ -196,6 +194,11 @@ footer {
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 5px;
+}
+
+.todo-title {
+	font-size: clamp(12px, 1.2vw, 40px);
+	flex: 0.8;
 }
 
 /* checkbox from uiverse.io */
@@ -280,6 +283,10 @@ input[type="checkbox"]:checked::before {
 	border-left: solid 5px var(--prio-high);
 }
 
+.todo-duedate {
+	font-size: clamp(12px, 0.8vw, 40px);
+}
+
 .todo-details {
 	border: solid 1px black;
 	width: clamp(80px, 2vw, 2vw);
@@ -290,7 +297,8 @@ input[type="checkbox"]:checked::before {
 	border-radius: 5px;
 	text-transform: uppercase;
 	background-color: transparent;
-	margin-left: 40%;
+	/* margin-left: 40%; */
+	font-size: clamp(12px, 0.8vw, 40px);
 }
 
 .todo-details:hover {
@@ -470,6 +478,14 @@ form input[type="text"]:focus {
 #newTodoBtns #newToDoDate {
 	display: flex;
 	gap: 1rem;
+}
+
+#newToDoDate input[type="date"] {
+	background-color: transparent;
+	border-radius: 0.3rem;
+	box-shadow: none;
+	border: 1px solid var(--dark-font);
+	padding: 0.2rem 0.5rem;
 }
 
 #prioritySelect {
