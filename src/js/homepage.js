@@ -1,4 +1,5 @@
 import { createElem } from "./functions";
+import { generateFooter } from "./functions";
 
 const sideNavContents = [
 	{
@@ -84,6 +85,9 @@ const homepage = () => {
 
 	sideNav.appendChild(mainProj);
 	body.appendChild(sideNav);
+
+	const pageFooter = generateFooter();
+	body.appendChild(pageFooter);
 };
 
 export const generateHomepage = () => {

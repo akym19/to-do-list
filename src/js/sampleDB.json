@@ -1,0 +1,73 @@
+{
+	"projects": [
+		{
+			"title": "Work",
+			"tasks": [
+				{
+					"taskTitle": "Work Task Title 1",
+					"taskDetail": "Work Task Detail 1",
+					"taskPriority": "low",
+					"taskDueDate": "01/01/01"
+				},
+				{
+					"taskTitle": "Work Task Title 2",
+					"taskDetail": "Work Task Detail 2",
+					"taskPriority": "medium",
+					"taskDueDate": "01/01/01"
+				},
+				{
+					"taskTitle": "Work Task Title 2",
+					"taskDetail": "Work Task Detail 2",
+					"taskPriority": "high",
+					"taskDueDate": "01/01/01"
+				}
+			]
+		},
+		{
+			"title": "School",
+			"tasks": [
+				{
+					"taskTitle": "School Task Title 1",
+					"taskDetail": "School Task Detail 1",
+					"taskPriority": "low",
+					"taskDueDate": "01/01/01"
+				},
+				{
+					"taskTitle": "School Task Title 2",
+					"taskDetail": "School Task Detail 2",
+					"taskPriority": "medium",
+					"taskDueDate": "01/01/01"
+				},
+				{
+					"taskTitle": "School Task Title 2",
+					"taskDetail": "School Task Detail 2",
+					"taskPriority": "high",
+					"taskDueDate": "01/01/01"
+				}
+			]
+		},
+		{
+			"title": "Personal",
+			"tasks": [
+				{
+					"taskTitle": "Personal Task Title 1",
+					"taskDetail": "Personal Task Detail 1",
+					"taskPriority": "low",
+					"taskDueDate": "01/01/01"
+				},
+				{
+					"taskTitle": "Personal Task Title 2",
+					"taskDetail": "Personal Task Detail 2",
+					"taskPriority": "medium",
+					"taskDueDate": "01/01/01"
+				},
+				{
+					"taskTitle": "Personal Task Title 2",
+					"taskDetail": "Personal Task Detail 2",
+					"taskPriority": "high",
+					"taskDueDate": "01/01/01"
+				}
+			]
+		}
+	]
+}

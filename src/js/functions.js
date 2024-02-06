@@ -8,3 +8,9 @@ export const createElem = (type, attributes = {}) => {
 	}
 	return elem;
 };
+
+export const generateFooter = () => {
+	const pageFooter = createElem("footer", {});
+	pageFooter.textContent = "A To-Do List App Project for The Odin Project";
+	return pageFooter;
+};
