@@ -100,7 +100,9 @@ nav #main-projects h1 {
 	cursor: default;
 }
 
-#main-projects li:hover:not(:last-child),
+#nav-home:hover,
+#nav-today:hover,
+#nav-week:hover,
 nav #projects li:hover {
 	background-color: var(--second);
 	cursor: pointer;
