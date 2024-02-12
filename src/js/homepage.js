@@ -1,5 +1,8 @@
-import { createElem } from "./functions";
+import { createElem, newButton } from "./functions";
 import { generateFooter } from "./functions";
+import { newPTButton } from "./functions";
+import projects from "./sampleDB.json";
+import { generateProjects } from "./functions";
 
 const sideNavContents = [
 	{
@@ -83,8 +86,22 @@ const homepage = () => {
 		mainProj.appendChild(li);
 	});
 
+	const projectsHTML = generateProjects(projects);
+
+	mainProj.appendChild(projectsHTML);
 	sideNav.appendChild(mainProj);
+
+	const newPTBtn = newPTButton();
+	sideNav.appendChild(newPTBtn);
 	body.appendChild(sideNav);
+
+	const main = createElem("main", {});
+	const todoContainer = createElem("div", {
+		id: "todo-container",
+	});
+
+	main.appendChild(todoContainer);
+	body.appendChild(main);
 
 	const pageFooter = generateFooter();
 	body.appendChild(pageFooter);
